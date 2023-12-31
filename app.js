@@ -14,7 +14,7 @@ app.use(express.json());
 
 
 const openai = new OpenAI({
-    apiKey: "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", // Replace with your OpenAI API key
+    apiKey: process.env.OPENAI_API_KEY // Fetch API key from environment variable
 });
 
 // Get the directory name using ES module compatible method
